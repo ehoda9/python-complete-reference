@@ -1,0 +1,17 @@
+{
+  "id": "mahmoud15/python-complete-reference-notebook",
+  "title": "Python Complete Reference Notebook",
+  "code_file": "Python-Complete-Reference.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": "false",
+  "enable_gpu": "false",
+  "enable_tpu": "false",
+  "enable_internet": "true",
+  "keywords": ["python", "tutorial", "reference"],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "machine_shape": "",
+  "model_sources": []
+}
