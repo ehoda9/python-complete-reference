@@ -1,0 +1,29 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets - never commit credentials
+kaggle.json
+.kaggle/
+.env
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Personal notes and archives
+Searching.txt
+*.zip
+
+# Files created when the File Handling notebooks are executed
+data.txt
+example.txt
+languages.txt
+new_file.txt
