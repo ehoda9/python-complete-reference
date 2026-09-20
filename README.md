@@ -1,13 +1,13 @@
 # Python Complete Reference
 
-A structured, notebook-based Python reference: from syntax basics to object oriented programming, regular expressions and type hints. Every topic is a notebook with explanations and code examples.
+A structured, notebook-based Python reference: from syntax basics to object oriented programming, regular expressions, type hints, comprehensions and itertools. Every topic is a notebook with explanations and code examples.
 
 **Read it online:** [Python Complete Reference Notebook on Kaggle](https://www.kaggle.com/code/mahmoud15/python-complete-reference-notebook)
 
 ## What is inside
 
-- **Offline notebooks** in [`notebooks/`](notebooks/): 58 notebooks in 10 folders, one topic per notebook, meant for studying and quick lookup.
-- **One unified notebook** in [`kaggle/`](kaggle/): all 10 parts in a single file (246 cells, 109 of them code) with a clickable roadmap and a table of contents. It is designed to run top to bottom without manual input and is the source of the Kaggle notebook above.
+- **Offline notebooks** in [`notebooks/`](notebooks/): 71 notebooks in 12 folders, one topic per notebook, meant for studying and quick lookup.
+- **One unified notebook** in [`kaggle/`](kaggle/): all 12 parts in a single file (276 cells, 122 of them code) with a clickable roadmap and a table of contents. It is designed to run top to bottom without manual input and is the source of the Kaggle notebook above.
 
 ## Roadmap
 
@@ -25,6 +25,8 @@ Part `N` of the unified notebook is the folder `N - ...` in `notebooks/`, and se
 | 8 | [Regular Expressions](notebooks/08%20-%20Regular%20Expressions) | 5 | Regex syntax, character classes, quantifiers, groups, assertions, the `re` functions, flags and performance | Part 1 (strings) |
 | 9 | [Object Oriented Programming](notebooks/09%20-%20Object%20Oriented%20Programming) | 13 | Classes, encapsulation, inheritance and MRO, polymorphism, ABCs, dunder methods, descriptors, dataclasses, design patterns | Parts 1-5, 7 |
 | 10 | [Type Hinting](notebooks/10%20-%20Type%20Hinting) | 6 | Type hint basics, unions and aliases, generics, protocols, `TypedDict`, advanced typing, runtime introspection, 3.14 notes | Parts 5, 9 |
+| 11 | [Comprehensions](notebooks/11%20-%20Comprehensions) | 5 | List, set, dict and generator expressions, conditions, nested comprehensions, scope, the walrus operator, async comprehensions, performance and readability | Parts 1-2, 4 |
+| 12 | [Itertools](notebooks/12%20-%20Itertools) | 8 | Infinite iterators, slicing and filtering, chaining and zipping, `accumulate` / `pairwise` / `batched` / `tee`, `groupby`, combinatorics, recipes | Parts 4, 5, 11 |
 
 ## Notebook index
 
@@ -148,6 +150,31 @@ Open [`00 - Python Notebook Content`](notebooks/00%20-%20Python%20Notebook%20Con
 
 </details>
 
+<details>
+<summary><strong>11 - Comprehensions</strong> (5 notebooks)</summary>
+
+- [`01 - Comprehensions Foundations`](notebooks/11%20-%20Comprehensions/01%20-%20Comprehensions%20Foundations.ipynb)
+- [`02 - Conditions, Multiple Loops & Nested Comprehensions`](notebooks/11%20-%20Comprehensions/02%20-%20Conditions,%20Multiple%20Loops%20%26%20Nested%20Comprehensions.ipynb)
+- [`03 - Dict, Set & Generator Expressions`](notebooks/11%20-%20Comprehensions/03%20-%20Dict,%20Set%20%26%20Generator%20Expressions.ipynb)
+- [`04 - Scope, Walrus Operator & Async Comprehensions`](notebooks/11%20-%20Comprehensions/04%20-%20Scope,%20Walrus%20Operator%20%26%20Async%20Comprehensions.ipynb)
+- [`05 - Performance, Readability & Best Practices`](notebooks/11%20-%20Comprehensions/05%20-%20Performance,%20Readability%20%26%20Best%20Practices.ipynb)
+
+</details>
+
+<details>
+<summary><strong>12 - Itertools</strong> (8 notebooks)</summary>
+
+- [`01 - Itertools Foundations`](notebooks/12%20-%20Itertools/01%20-%20Itertools%20Foundations.ipynb)
+- [`02 - Infinite Iterators`](notebooks/12%20-%20Itertools/02%20-%20Infinite%20Iterators.ipynb)
+- [`03 - Filtering & Slicing Iterators`](notebooks/12%20-%20Itertools/03%20-%20Filtering%20%26%20Slicing%20Iterators.ipynb)
+- [`04 - Chaining, Zipping & Mapping`](notebooks/12%20-%20Itertools/04%20-%20Chaining,%20Zipping%20%26%20Mapping.ipynb)
+- [`05 - Accumulate, Pairwise, Batched & Tee`](notebooks/12%20-%20Itertools/05%20-%20Accumulate,%20Pairwise,%20Batched%20%26%20Tee.ipynb)
+- [`06 - Grouping with groupby`](notebooks/12%20-%20Itertools/06%20-%20Grouping%20with%20groupby.ipynb)
+- [`07 - Combinatoric Iterators`](notebooks/12%20-%20Itertools/07%20-%20Combinatoric%20Iterators.ipynb)
+- [`08 - Recipes, Patterns & Best Practices`](notebooks/12%20-%20Itertools/08%20-%20Recipes,%20Patterns%20%26%20Best%20Practices.ipynb)
+
+</details>
+
 ## Run it locally
 
 Only Python and JupyterLab are needed. The notebooks use the standard library only, so there is nothing else to install.
@@ -184,7 +211,9 @@ python-complete-reference/
     ├── 07 - Errors & Exceptions/
     ├── 08 - Regular Expressions/
     ├── 09 - Object Oriented Programming/
-    └── 10 - Type Hinting/
+    ├── 10 - Type Hinting/
+    ├── 11 - Comprehensions/
+    └── 12 - Itertools/
 ```
 
 ## Update the Kaggle notebook
