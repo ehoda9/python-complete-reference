@@ -6,8 +6,8 @@ A structured, notebook-based Python reference: from syntax basics to object orie
 
 ## What is inside
 
-- **Offline notebooks** in [`notebooks/`](notebooks/): 94 notebooks in 14 folders, one topic per notebook, meant for studying and quick lookup.
-- **One unified notebook** in [`kaggle/`](kaggle/): all 14 parts in a single file (329 cells, 146 of them code) with a clickable roadmap, a table of contents and an A-Z index of every name it explains. It is designed to run top to bottom without manual input and is the source of the Kaggle notebook above.
+- **Offline notebooks** in [`notebooks/`](notebooks/): 97 notebooks in 14 folders, one topic per notebook, meant for studying and quick lookup.
+- **One unified notebook** in [`kaggle/`](kaggle/): all 14 parts in a single file (341 cells, 152 of them code) with a clickable roadmap, a table of contents and an A-Z index of every name it explains. It is designed to run top to bottom without manual input and is the source of the Kaggle notebook above.
 
 ## Scope
 
@@ -19,6 +19,16 @@ A **beginner-to-intermediate refresher**: short explanations, quick tables and r
 
 The parts follow a learning path: each part builds on the ones before it. A few one-line examples in Parts 1 and 5 use a construct that is explained later (for example `try` in Data Types). The **Suggested background** column lists the earlier parts whose ideas a part uses. **Quick References** (keywords and built-in functions) is meant for lookup at any time.
 
+## Find things fast
+
+| You want to... | Use |
+|---|---|
+| Look up a name (function, method, keyword) | The **A-Z index** at the end of the unified notebook |
+| Find the tool for a job ("how do I remove duplicates?") | [`14 - Quick References/04 - Task Index`](notebooks/14%20-%20Quick%20References/04%20-%20Task%20Index.ipynb) |
+| See every method of `str`, `list`, `tuple`, `dict` or `set` | [`14 - Quick References/03 - Methods of Built-in Types`](notebooks/14%20-%20Quick%20References/03%20-%20Methods%20of%20Built-in%20Types.ipynb) |
+| Recall a syntax or the options of a topic | The **quick table at the top** of every notebook |
+| See all keywords or built-in functions | The first two notebooks of **Quick References** |
+
 ## Roadmap
 
 Part `N` of the unified notebook is the folder `N - ...` in `notebooks/`, and section `N.M` is file `M - ...` inside that folder. For example, section 4.9 (Decorators) is [`04 - Functions/09 - Decorators`](notebooks/04%20-%20Functions/09%20-%20Decorators.ipynb).
@@ -27,7 +37,7 @@ Part `N` of the unified notebook is the folder `N - ...` in `notebooks/`, and se
 |---|---|---|---|---|
 | 1 | [Python Basics](notebooks/01%20-%20Python%20Basics) | 8 | Comments, variables, data types, operators, type conversion, user input, string formatting, modules and `import` | Start here |
 | 2 | [Control Flow](notebooks/02%20-%20Control%20Flow) | 4 | `if` / `elif` / `else`, `while` and `for` loops, `match` / `case` | Part 1 |
-| 3 | [Data Structures](notebooks/03%20-%20Data%20Structures) | 5 | Lists, tuples, sets & frozen sets, dictionaries, booleans, container comparison guide | Part 2 |
+| 3 | [Data Structures](notebooks/03%20-%20Data%20Structures) | 6 | Lists, tuples, sets & frozen sets, dictionaries, references and copying, booleans, container comparison guide | Parts 1-2 |
 | 4 | [Functions](notebooks/04%20-%20Functions) | 13 | Return values, parameters, defaults, `*args` / `**kwargs`, scope, recursion, lambda, decorators, docstrings, type hints, PEP 8 | Parts 1-2 |
 | 5 | [Errors, Debugging & Profiling](notebooks/05%20-%20Errors,%20Debugging%20%26%20Profiling) | 4 | Exception types, `raise`, `try` / `except` / `else` / `finally`, tracebacks, `assert`, `pdb`, `timeit`, `cProfile` | Parts 1-2, 4 |
 | 6 | [Comprehensions, Iterators & Generators](notebooks/06%20-%20Comprehensions,%20Iterators%20%26%20Generators) | 7 | List, set, dict and generator expressions, nested comprehensions, iterables vs iterators, generators, scope and the walrus operator | Parts 1-2, 4-5 |
@@ -38,7 +48,7 @@ Part `N` of the unified notebook is the folder `N - ...` in `notebooks/`, and se
 | 11 | [Object Oriented Programming](notebooks/11%20-%20Object%20Oriented%20Programming) | 16 | Classes, encapsulation, inheritance and MRO, custom exceptions, polymorphism, ABCs, dunder methods, context managers, descriptors, dataclasses, class patterns, design patterns | Parts 1-2, 4-7, 9 |
 | 12 | [Advanced Type Hinting](notebooks/12%20-%20Advanced%20Type%20Hinting) | 4 | `TypeVar` and generics, protocols, `TypedDict`, `Self`, `TypeGuard`, `overload`, `ParamSpec`, runtime introspection, 3.14 notes | Parts 1-2, 4-5, 7, 11 |
 | 13 | [Building Real Programs](notebooks/13%20-%20Building%20Real%20Programs) | 6 | Packages and the `__main__` guard, command-line arguments, external packages with `pip`, logging, `unittest`, `doctest` | Parts 1-2, 4-6, 9, 11 |
-| 14 | [Quick References](notebooks/14%20-%20Quick%20References) | 2 | All 35 keywords with examples and the built-in functions by category | Parts 1-2, 4-7, 9, 11 |
+| 14 | [Quick References](notebooks/14%20-%20Quick%20References) | 4 | All 35 keywords with examples, the built-in functions by category, every method of `str`, `list`, `tuple`, `dict` and `set`, and a task index (how do I...?) | Parts 1-2, 4-9, 11 |
 
 ## Notebook index
 
@@ -69,13 +79,14 @@ Open [`00 - Python Notebook Content`](notebooks/00%20-%20Python%20Notebook%20Con
 </details>
 
 <details>
-<summary><strong>03 - Data Structures</strong> (5 notebooks)</summary>
+<summary><strong>03 - Data Structures</strong> (6 notebooks)</summary>
 
 - [`01 - Lists`](notebooks/03%20-%20Data%20Structures/01%20-%20Lists.ipynb)
 - [`02 - Tuples`](notebooks/03%20-%20Data%20Structures/02%20-%20Tuples.ipynb)
 - [`03 - Sets & Frozen Sets`](notebooks/03%20-%20Data%20Structures/03%20-%20Sets%20%26%20Frozen%20Sets.ipynb)
 - [`04 - Dictionaries`](notebooks/03%20-%20Data%20Structures/04%20-%20Dictionaries.ipynb)
-- [`05 - Boolean & Containers Comparison`](notebooks/03%20-%20Data%20Structures/05%20-%20Boolean%20%26%20Containers%20Comparison.ipynb)
+- [`05 - References, Identity & Copying`](notebooks/03%20-%20Data%20Structures/05%20-%20References,%20Identity%20%26%20Copying.ipynb)
+- [`06 - Boolean & Containers Comparison`](notebooks/03%20-%20Data%20Structures/06%20-%20Boolean%20%26%20Containers%20Comparison.ipynb)
 
 </details>
 
@@ -215,10 +226,12 @@ Open [`00 - Python Notebook Content`](notebooks/00%20-%20Python%20Notebook%20Con
 </details>
 
 <details>
-<summary><strong>14 - Quick References</strong> (2 notebooks)</summary>
+<summary><strong>14 - Quick References</strong> (4 notebooks)</summary>
 
 - [`01 - Keywords`](notebooks/14%20-%20Quick%20References/01%20-%20Keywords.ipynb)
 - [`02 - Built-in Functions`](notebooks/14%20-%20Quick%20References/02%20-%20Built-in%20Functions.ipynb)
+- [`03 - Methods of Built-in Types`](notebooks/14%20-%20Quick%20References/03%20-%20Methods%20of%20Built-in%20Types.ipynb)
+- [`04 - Task Index`](notebooks/14%20-%20Quick%20References/04%20-%20Task%20Index.ipynb)
 
 </details>
 
